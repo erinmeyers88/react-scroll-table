@@ -1,0 +1,3 @@
+tr:first-child td {
+    border-top: hidden !important;
+}
