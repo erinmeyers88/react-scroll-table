@@ -1,4 +1,3 @@
-**react-scroll-table**
 ###Usage
 ```
 npm install react-sroll-table
