@@ -72,8 +72,14 @@ const ExampleApp = () => (
     <h2>react-scroll-table</h2>
     <ReactScrollTable {...tableProps} />
   </div>);
+<<<<<<< HEAD
 ```
 
+=======
+  
+export default ExampleApp;
+```
+>>>>>>> b209e9ccb91dbd8cd99fc8b98c5759253e80fd3a
 ### Table Props:
 
 | Name | Type | Default Value | Notes |
