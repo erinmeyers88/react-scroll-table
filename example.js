@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactScrollTable from '../src/index';
+import ReactScrollTable from './src/index';
 import {render} from 'react-dom';
 
 const noteFormatter = (data) => {
