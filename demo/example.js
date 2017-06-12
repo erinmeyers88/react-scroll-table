@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactScrollTable from '../src/index';
+import {render} from 'react-dom';
 
 const noteFormatter = (data) => {
   return <pre style={{
@@ -68,4 +69,4 @@ const Example = () => (
     <ReactScrollTable {...tableProps} />
   </div>);
 
-export default Example;
+render(<Example/>, document.getElementById('render-table-here'))

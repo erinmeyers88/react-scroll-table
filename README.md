@@ -1,8 +1,8 @@
-### Usage
+### Install
 ```
-npm install react-sroll-table
+npm install react-scroll-table
 ```
-
+### Example Usage
 ```
 import ReactScrollTable from 'react-scroll-table';
 
@@ -106,3 +106,8 @@ An object of key value pairs. Each key can be assigned to a column in the table 
 ### Styling:
 
 The class &quot;react-clean-table-body&quot; can be used to apply CSS styling to the table&#39;s scrollbar.
+
+### Inspiration
+[react-table] (https://github.com/tannerlinsley/react-table)
+
+
