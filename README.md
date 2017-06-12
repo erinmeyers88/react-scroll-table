@@ -5,8 +5,7 @@ npm install react-sroll-table
 
 ```
 import ReactScrollTable from 'react-scroll-table';
-```
-```
+
 const noteFormatter = (data) => {
   return <pre style={{
     margin: 0,
@@ -14,13 +13,11 @@ const noteFormatter = (data) => {
     fontFamily: 'Lato, sans-serif',
   }}>{data.text}</pre>;
 };
-```
-```
+
 const importantCellFormatter = (data) => {
   return data.favorite ? '*' : '';
 };
-```
-```
+
 const tableProps = {
   backgroundColor: '#0B76B2',
   borderColor: '#FF434D',
@@ -69,15 +66,13 @@ const tableProps = {
   shadedColor: '#2AB2FF',
   textColor: '#ffffff'
 };
-```
-```
+
 const ExampleApp = () => (
   <div style={{padding: 50}}>
     <h2>react-scroll-table</h2>
     <ReactScrollTable {...tableProps} />
   </div>);
-```
-```
+  
 export default ExampleApp;
 ```
 ###Table Props:
