@@ -1,13 +1,11 @@
-**react-scroll-table**
-###Usage
+### Usage
 ```
 npm install react-sroll-table
 ```
 
 ```
 import ReactScrollTable from 'react-scroll-table';
-```
-```
+
 const noteFormatter = (data) => {
   return <pre style={{
     margin: 0,
@@ -15,13 +13,11 @@ const noteFormatter = (data) => {
     fontFamily: 'Lato, sans-serif',
   }}>{data.text}</pre>;
 };
-```
-```
+
 const importantCellFormatter = (data) => {
   return data.favorite ? '*' : '';
 };
-```
-```
+
 const tableProps = {
   backgroundColor: '#0B76B2',
   borderColor: '#FF434D',
@@ -70,18 +66,15 @@ const tableProps = {
   shadedColor: '#2AB2FF',
   textColor: '#ffffff'
 };
-```
-```
+
 const ExampleApp = () => (
   <div style={{padding: 50}}>
     <h2>react-scroll-table</h2>
     <ReactScrollTable {...tableProps} />
   </div>);
 ```
-```
-export default ExampleApp;
-```
-###Table Props:
+
+### Table Props:
 
 | Name | Type | Default Value | Notes |
 | --- | --- | --- | --- |
@@ -95,7 +88,7 @@ export default ExampleApp;
 | shadedColor | String (color name, hex value, RGB value) |   | Color to be displayed every other row, starting with the first row of the body, if shaded is set to true. |
 | textColor | String (color name, hex value, RGB value) | Black |   |
 
-###Column Object Props:
+### Column Object Props:
 
 | Name | Type | Default Value | Notes |
 | --- | --- | --- | --- |
@@ -106,10 +99,10 @@ export default ExampleApp;
 | sortFunction | Function |   | Allows customized sorting, for example sorting date time values. |
 | width | String (for percentage value) or Number (for pixel value) |   | Determines the width of the column. |
 
-###Data Object:
+### Data Object:
 
 An object of key value pairs. Each key can be assigned to a column in the table via the accessor property of a column object.  The table body will display the value or what is returned from the function passed to the column object&#39;s render property.
 
-###Styling:
+### Styling:
 
 The class &quot;react-clean-table-body&quot; can be used to apply CSS styling to the table&#39;s scrollbar.
