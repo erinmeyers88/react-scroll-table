@@ -60,11 +60,13 @@ const tableProps = {
     {favorite: false, username: 'Han Solo', text: 'Laugh it up, fuzzball!', date: new Date(1990, 4, 7).toDateString()},
     {favorite: true, username: 'Yoda', text: 'Try not. Do—or do not. There is no try.', date: new Date(2005, 6, 12).toDateString()},
     {favorite: false, username: 'Leia Organa', text: 'Help me Obi-Wan Kenobi, you\'re my only hope.', date: new Date(2012, 1, 27).toDateString()}],
+  downIcon: <i className="fa fa-down"/>,
   maxHeight: 150,
   noDataText: 'no data here',
   shaded: true,
   shadedColor: '#2AB2FF',
-  textColor: '#ffffff'
+  textColor: '#ffffff',
+  upIcon: <i className="fa fa-up"/>
 };
 
 const ExampleApp = () => (
@@ -82,11 +84,13 @@ const ExampleApp = () => (
 | borderColor | String (color name, hex value, RGB value) | Black |   |
 | columns | Array of column objects |   |   |
 | data | Array of data objects |   |   |
+| downIcon | JSX |   |  Icon to appear in header for descending sort. |
 | maxHeight | Number |   | If this property is set, the table will scroll when its contents cause it to exceed this number. |
 | noDataText | String |   | Text to show if the data property is empty. |
 | shaded | Boolean |   | If set to true, the table will use backgroundColor starting with the header, and alternate the color of the rows with shadedColor. |
 | shadedColor | String (color name, hex value, RGB value) |   | Color to be displayed every other row, starting with the first row of the body, if shaded is set to true. |
 | textColor | String (color name, hex value, RGB value) | Black |   |
+| upIcon | JSX |   |  Icon to appear in header for ascending sort. |
 
 ### Column Object Props:
 
