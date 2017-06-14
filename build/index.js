@@ -227,7 +227,9 @@ var TableHeader = function TableHeader(_ref) {
       headerStyle = _ref.headerStyle,
       sortFunction = _ref.sortFunction,
       sortState = _ref.sortState,
-      textColor = _ref.textColor;
+      textColor = _ref.textColor,
+      upIcon = _ref.upIcon,
+      downIcon = _ref.downIcon;
   return _react2.default.createElement(
     'thead',
     { style: { display: 'table', width: 'calc(100% - 1em)', tableLayout: 'fixed' } },
@@ -254,9 +256,9 @@ var TableHeader = function TableHeader(_ref) {
             isSorted === undefined ? _react2.default.createElement(
               'span',
               { style: { color: textColor } },
-              _react2.default.createElement('i', { className: 'fa fa-angle-up' }),
-              _react2.default.createElement('i', { className: 'fa fa-angle-down' })
-            ) : isSorted ? _react2.default.createElement('i', { style: { color: textColor }, className: 'fa fa-angle-up' }) : _react2.default.createElement('i', { style: { color: textColor }, className: 'fa fa-angle-down' })
+              upIcon,
+              downIcon
+            ) : isSorted ? { upIcon: upIcon } : { downIcon: downIcon }
           )
         );
       })

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TableHeader = ({columns, headerStyle, sortFunction, sortState, textColor}) => (
+const TableHeader = ({columns, headerStyle, sortFunction, sortState, textColor, upIcon, downIcon}) => (
   <thead style={{display: 'table', width: 'calc(100% - 1em)', tableLayout: 'fixed'}}>
   <tr>
     {columns.map(function (col, key) {
@@ -13,11 +13,11 @@ const TableHeader = ({columns, headerStyle, sortFunction, sortState, textColor})
         {col.sortable && <span style={{marginLeft: 5}}>
                 {isSorted === undefined ?
                   <span style={{color: textColor}}>
-                    <i className="fa fa-angle-up"/>
-                    <i className="fa fa-angle-down"/>
+                    {upIcon}
+                    {downIcon}
                   </span> :
                   (isSorted ?
-                      <i style={{color: textColor}} className="fa fa-angle-up"/> : <i style={{color: textColor}} className="fa fa-angle-down"/>
+                    {upIcon} : {downIcon}
                   )}
               </span>}
 
